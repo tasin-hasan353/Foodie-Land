@@ -188,9 +188,142 @@
     
 }
 
+/* categories section started */
+.categories {
+
+}
+
+.categories .categories-txt-view-more-cat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.categories-txt {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2rem;
+}
+
+.categories-btn {
+    background-color: #e7fafe;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.2rem;
+    border: none;
+    padding: 15px 26px;
+}
 
 
+.all-categories {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 180px;
+}
 
+/* each card */
+.category-item {
+    position: relative;
+    width: 180px;
+    text-align: center;
+}
+
+/* image */
+.category-image img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-left: 15%;
+}
+
+/* text card */
+.category-text-breakfast {
+    margin-top: -40px;
+    padding: 60px 20px 20px;
+    background: linear-gradient(
+    to bottom,
+    rgba(112,130,70,0.05) 0%,
+    rgba(112,130,70,0.05) 95%,
+    rgba(112,130,70,1) 99%
+    );
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+.category-text-vegan {
+    margin-top: -40px;
+    padding: 60px 20px 20px;
+    background: linear-gradient(
+    to bottom,
+    rgb(204 38 27, 0.05) 0%,
+    rgb(204 38 27, 0.05)95%,
+    rgb(204 38 27,1) 99%
+    );
+    border-radius: 30px;
+    font-size: 1rem;
+
+}
+
+
+.category-text-meat {
+    margin-top: -40px;
+    padding: 60px 20px 20px;
+    background: linear-gradient(
+    to bottom,
+    rgba(112,130,70,0.05) 0%,
+    rgba(112,130,70,0.05) 95%,
+    rgba(112,130,70,1) 99%
+    );
+    border-radius: 30px;
+    font-size: 1rem;
+
+}
+
+.category-text-dessert {
+    margin-top: -40px;
+    padding: 60px 20px 20px;
+    background: linear-gradient(
+    to bottom,
+    rgba(112,130,70,0.05) 0%,
+    rgba(112,130,70,0.05) 95%,
+    rgba(112,130,70,1) 99%
+    );
+    border-radius: 30px;
+    font-size: 1rem;
+
+}
+
+
+.category-text-lunch {
+    margin-top: -40px;
+    padding: 60px 20px 20px;
+    background: linear-gradient(
+    to bottom,
+    rgba(112,130,70,0.05) 0%,
+    rgba(112,130,70,0.05) 95%,
+    rgba(112,130,70,1) 99%
+    );
+    border-radius: 30px;
+    font-size: 1rem;
+
+}
+
+
+.category-text-chocolate {
+    margin-top: -40px;
+    padding: 60px 20px 20px;
+    background: linear-gradient(
+    to bottom,
+    rgba(112,130,70,0.05) 0%,
+    rgba(112,130,70,0.05) 95%,
+    rgba(112,130,70,1) 99%
+    );
+    border-radius: 30px;
+    font-size: 1rem;
+
+}
 
 
 /* responsiveness for mobile  */
@@ -263,6 +396,21 @@
     display: none;
  }
 
+ .categories .categories-txt-view-more-cat {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+    gap: 40px;
+ }
+
+ .all-categories {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 70px;
+ }
+
 }
 
 
@@ -304,6 +452,20 @@
  .badge {
     display: none;
  }
+
+ .categories .categories-txt-view-more-cat {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+    gap: 40px;
+ }
+
+ .all-categories {
+    flex-wrap: wrap;
+ }
+
 
 
 
