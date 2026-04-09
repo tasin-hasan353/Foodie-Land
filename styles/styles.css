@@ -1,6 +1,352 @@
+/* universal css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+ /* for font */
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+}
+
+/* shared css */
+.max_width {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+.same-time-recipe{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.05);
+    gap: 10px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.gray-text{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.universal-btn {
+    background-color: black;
+    color: white;
+    padding: 18px 36px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 20px;
+}
+
+
+/* CSS for every part */
+.nav-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+    
+}
+
+.menues-list {
+    display: flex;
+    gap: 61px;
+    list-style: none;
+    
+}
+
+.menues-list li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+}
+
+.nav-social-icons{
+    display: flex;
+    gap: 40px;
+
+}
+
+.nav-social-icons i{
+    width: 22px;
+    height: 22px;
+}
+
+.nav_hr {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* border-top: 1px solid black; */
+    margin-bottom: 40px;
+}
+
+
+
+/* hero section started */
+.hero-section {
+    display: flex;
+    position: relative;
+    margin-bottom: 160px;
+}
+
+.hero-section .main-dish-description{
+    background-color: #e7fafe;
+    padding: 50px;  
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.hot-recipe-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    background-color: white;
+    box-shadow: 5px 10px 100px 0 #294046;
+    width: 160px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    margin-bottom: 32px;
+}
+
+.hot-recipe-part .hot-recipe-img{
+    width: 24px;
+    height: 24px;
+}
+
+.hot-recipe-part .hot-recipe-des {
+    font-size: 0.80rem;
+    font-weight: 600;
+    line-height: 1.2px;
+}
+
+.main-dish-description .recipe-title {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: auto;
+    margin-bottom: 24px;
+    color: black;
+}
+
+.main-dish-description .recipe-des {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.75rem;
+    margin-bottom: 2px;
+    font-weight: 400;
+    text-align: start;
+
+}
+
+.main-dish-description .time-recipe{
+    display: flex;
+    gap: 16px;
+}
+
+
+.chef-img-name-btn {
+    display: flex;
+    margin-top: 100px;
+    gap: 158px;
+}
+
+.chef-img-name-btn .chef-img-name{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.chef-name-sec .chef-name{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2rem;
+    margin-bottom: 7px;
+}
+
+/* .hero-img {
+    width: 100%;
+    height: 100%;
+} */
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge {
+    position: absolute;
+    right: 30%;
+    top: 10%;
+    
+}
+
+
+
+
+
+
+/* responsiveness for mobile  */
+/* Mobile */
+@media (max-width: 480px) {
+    .nav-part {
+        margin: 20px auto;
+        flex-direction: column;
+    }
+
+  .menues-list {
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .nav-social-icons{
+    display: none;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    margin-bottom: 50px;
+    align-items: center;
+    text-align: center;
+  }
+
   
+
+  .hero-section .main-dish-description{
+    padding: 30px; 
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+ }
+
+ .chef-img-name-btn {
+    display: flex;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+ 
+
+ .main-dish-description .recipe-title {
+    font-size: 2rem; 
+ }
+
+
+ .main-dish-description .recipe-des {
+    text-align: center;
+ }
+
+ .chef-img-name-btn {
+    flex-direction: column;
+ }
+
+ .viewRecipes-button {
+    align-items: center;
+    justify-content: center;
+ }
+
+ .hero-section .hero-img img{
+    max-width: 400px;
+    border-radius: 0 0 0 0;
+}
+
+
+ .badge {
+    display: none;
+ }
+
+}
+
+
+/* responsiveness for medium devices */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .nav-part {
+        margin: 20px auto;
+        flex-direction: column;
+    }
+
+   .menues-list {
+      gap: 50px;
+      margin-top: 20px;
+   }
+
+    .nav-social-icons{
+        display: none;
+    }
+
+  .hero-section {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+
+  .hero-section .main-dish-description{
+    padding: 30px; 
+    max-width: fit-content; 
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+ }
+
+
+ .chef-img-name-btn {
+    flex-direction: column;
+ }
+
+ .badge {
+    display: none;
+ }
+
+
+
+}
+
+/* for laptop */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+    .nav-part {
+        margin: 20px auto;
+        flex-direction: column;
+    }
+
+   .menues-list {
+      gap: 50px;
+      margin-top: 20px;
+   }
+
+    .nav-social-icons{
+        display: none;
+    }
+
+    .hero-section {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .hero-section .main-dish-description{
+    padding: 30px;  
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .chef-img-name-btn {
+    flex-direction: column;
+ }
+
+  .badge {
+    display: none;
+ }
+
+
+
+
 }
