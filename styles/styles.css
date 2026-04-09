@@ -189,9 +189,7 @@
 }
 
 /* categories section started */
-.categories {
 
-}
 
 .categories .categories-txt-view-more-cat {
     display: flex;
@@ -326,6 +324,224 @@
 }
 
 
+/* simple and tasty recipe section started */
+.simple-tasty {
+    margin-bottom: 143px;
+}
+
+.simple-tasty .simple-tasty-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #000000;
+    /* line-height: 1.2rem; */
+    margin-bottom: 24px;
+}
+
+.simple-tasty .simple-tasty-des {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: 100px;
+}
+
+.simple-tasty-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.simple-tasty-cards .card {
+    width: 400px;
+    height: auto;
+    background: linear-gradient(
+    to bottom,
+    #E7F9FD 0%,
+    #E7F9FD 100%
+  );
+   padding: 16px 16px 24px 16px;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+
+   position: relative;
+}
+
+
+.simple-tasty-cards .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.time-recipe-flex {
+    display: flex;
+    gap: 24px;
+
+}
+
+.time-recipe-flex .simple-tasty-btns {
+    background: none;
+    padding: 0;
+}
+
+.simple-tasty-cards .card .love-icon {
+    position: absolute;
+    right: 8%;
+    top: 8%;
+}
+
+.simple-tasty-cards .card.poster {
+  background: none;
+  box-shadow: none; /* optional */
+  padding: 0;       /* optional, if you want it tight */
+}
+
+.display_none {
+    display: none;
+}
+
+
+/* happy chef section started */
+.happy-chef {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    margin-bottom: 160px;
+}
+
+.happy-chef .chef-title-des-btn .chef-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+
+.happy-chef .chef-title-des-btn .chef-des {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+
+.happy-chef .chef-image {
+    background: linear-gradient(
+    to bottom,
+    #E7F9FD 0%,
+    #E7F9FD 100%
+  );
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+}
+
+.happy-chef .chef-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.happy-chef .chef-image .object-position {
+    position: absolute;
+}
+
+.happy-chef .chef-image .meat {
+    left: 5%;
+    top: 2%;
+}
+
+.happy-chef .chef-image .meat img {
+     width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.happy-chef .chef-image .onion {
+    top: 10%;
+    right: 20%;
+}
+
+.happy-chef .chef-image .onion img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.happy-chef .chef-image .tomatoes {
+    left: -3%;
+    bottom: 20%;
+
+}
+
+.happy-chef .chef-image .tomatoes img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.happy-chef .chef-image .healthy {
+    right: 4%;
+    top: 30%;
+}
+
+.happy-chef .chef-image .healthy img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* instagram section started */
+.whole-instagram {
+    background: linear-gradient(
+    to bottom,
+    #E7F9FD 0%,
+    #E7F9FD 100%
+  );
+  padding: 80px 0px 80px 0px;
+}
+
+.instagram {
+    display: grid;
+    justify-items: center;
+   
+}
+
+.instagram .instagram-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #000000;
+    /* line-height: 1.2rem; */
+    margin-bottom: 24px;
+
+}
+
+
+.instagram .instagram-des {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: 80px;
+}
+
+.instagram .instagram-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+
+.instagram .instagram-cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* responsiveness for mobile  */
 /* Mobile */
 @media (max-width: 480px) {
@@ -411,6 +627,77 @@
     margin-bottom: 70px;
  }
 
+
+ .simple-tasty-cards {
+    
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    
+}
+
+.happy-chef {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.happy-chef .chef-title-des-btn {
+    display: grid;
+    justify-items: center;
+}
+
+.happy-chef .chef-title-des-btn .chef-title {
+    font-size: 2rem;
+}
+
+.happy-chef .chef-title-des-btn .chef-des {
+    margin-bottom: 30px;
+}
+
+.happy-chef .chef-image {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.happy-chef .chef-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.happy-chef .chef-image .tomatoes {
+    left: 3%;
+    bottom: 20%;
+
+}
+
+
+.whole-instagram {
+   
+  padding: 40px 0px 40px 0px;
+}
+
+
+.instagram .instagram-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.instagram .instagram-des {
+    margin-bottom: 40px;
+}
+
+
+.instagram .instagram-cards {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 40px;
+}
+
 }
 
 
@@ -464,9 +751,74 @@
 
  .all-categories {
     flex-wrap: wrap;
+    justify-content: center;
  }
 
+ .simple-tasty-cards {
+    
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    
+}
 
+.happy-chef {
+    flex-direction: column;
+    justify-items: center;
+}
+
+.happy-chef .chef-title-des-btn {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+.happy-chef .chef-title-des-btn .chef-title {
+    font-size: 2rem;
+}
+
+.happy-chef .chef-title-des-btn .chef-des {
+    margin-bottom: 30px;
+}
+
+.happy-chef .chef-image {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.happy-chef .chef-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.happy-chef .chef-image .tomatoes {
+    left: 3%;
+    bottom: 20%;
+
+}
+
+
+.whole-instagram {
+   
+  padding: 40px 0px 40px 0px;
+}
+
+
+.instagram .instagram-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.instagram .instagram-des {
+    margin-bottom: 40px;
+}
+
+.instagram .instagram-cards {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 40px;
+}
 
 
 }
@@ -507,6 +859,13 @@
   .badge {
     display: none;
  }
+
+ .simple-tasty-cards {
+    
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    
+}
 
 
 
