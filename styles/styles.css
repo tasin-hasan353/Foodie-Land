@@ -542,6 +542,171 @@
     object-fit: cover;
 }
 
+
+
+/* delicious section starts from here */
+.delicious-section {
+    margin-top: 160px;
+    margin-bottom: 180px;
+}
+
+.delicious-section .delicious-title-des {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+
+.delicious-section .delicious-title-des 
+.delicious-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+.delicious-section  .delicious-des {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+
+.delicious-section .delicious-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.delicious-section .delicious-cards .delicious-card {
+    /* width: 290px; */
+    position: relative;
+}
+
+.delicious-cards .delicious-card>img {
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+}
+
+.delicious-cards .delicious-card .delicious-card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 24px;
+    margin-top: 16px;
+    
+}
+
+.delicious-cards .delicious-card .delicious-love-icon {
+    position: absolute;
+    right: 5%;
+    top: 5%;   
+}
+
+.deliciousness-inbox-card {
+    background-color: #E7F9FD;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 80px 0px 80px 0px;
+    border-radius: 30px;
+    position: relative;
+    margin-bottom: 160px;
+}
+
+.deliciousness-inbox-card .deliciousness-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.deliciousness-inbox-card .deleciousness-des {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.deliciousness-inbox-card .email-address-place-btn{
+    display: flex;
+    gap: 144px;
+    align-items: center;
+    background-color: white;
+    padding: 10px 10px 10px 32px;
+    border-radius: 20px;
+}
+
+.email-address-place-btn .email-address-place {
+    font-size: 0.80rem;
+    font-weight: 500;
+}
+
+.deliciousness-inbox-card .deliciousness-absolute-img {
+    position: absolute;
+}
+
+.deliciousness-inbox-card  .deliciousness-absolute-img1 {
+    right: 0%;
+    bottom: 0%;
+}
+
+.deliciousness-inbox-card  .deliciousness-absolute-img1>img {
+    border-radius: 30px;
+}
+
+.deliciousness-inbox-card  .deliciousness-absolute-img2 {
+    left: 0%;
+    bottom: 0%;
+} 
+
+.footer-logo {
+    margin-bottom: 5px;
+}
+
+.footer-list {
+    display: flex;
+    gap: 61px;
+    list-style: none;
+    justify-content: end;
+    margin-bottom: 10px;
+}
+
+.footer-list li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+}
+
+.footer-des {
+    margin-bottom: 48px;
+}
+
+footer>hr {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 48px;
+}
+
+footer .copy-right-social-icons {
+    display: flex;
+    gap: 338px;
+    justify-content: end;
+    margin-bottom: 48px;
+}
+
+footer .copy-right-social-icons .copy-right .orange-text {
+    color: orangered;
+}
+
+footer .copy-right-social-icons .social-icons {
+    display: flex;
+    gap: 40px;
+}
+
+
 /* responsiveness for mobile  */
 /* Mobile */
 @media (max-width: 480px) {
@@ -698,6 +863,80 @@
     margin-bottom: 40px;
 }
 
+
+.delicious-section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+
+.delicious-section .delicious-title-des {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.delicious-section .delicious-title-des .delicious-title {
+    font-size: 2rem;
+}
+
+.delicious-section .delicious-cards {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.deliciousness-inbox-card {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 80px;
+}
+
+
+
+.deliciousness-inbox-card .deliciousness-title {
+    text-align: center;
+}
+
+.deliciousness-inbox-card .email-address-place-btn {
+    gap: 80px;
+}
+
+.deliciousness-inbox-card .deliciousness-absolute-img {
+    display: none;
+}
+
+.footer-logo {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-list {
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-des {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+footer>hr {
+    margin-bottom: 30px;
+}
+
+footer .copy-right-social-icons {
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
 }
 
 
@@ -820,6 +1059,75 @@
     margin-bottom: 40px;
 }
 
+.delicious-section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.delicious-section .delicious-title-des {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.delicious-section .delicious-title-des .delicious-title {
+    font-size: 2rem;
+}
+
+.delicious-section .delicious-cards {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.deliciousness-inbox-card {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 80px;
+}
+
+.deliciousness-inbox-card .deliciousness-title {
+    text-align: center;
+}
+
+.deliciousness-inbox-card .email-address-place-btn {
+    gap: 80px;
+}
+
+.deliciousness-inbox-card .deliciousness-absolute-img {
+    display: none;
+}
+
+.footer-logo {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-list {
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-des {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+footer>hr {
+    margin-bottom: 30px;
+}
+
+footer .copy-right-social-icons {
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
 
 }
 
