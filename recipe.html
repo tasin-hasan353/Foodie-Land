@@ -1,11 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe</title>
-</head>
-<body>
-    <h1>Hello Recipe</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodie Land</title>
+
+    <!-- for fabicon -->
+
+    <!-- For icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- for linking with CSS -->
+    <link rel="stylesheet" href="styles/recipe.css" />
+  </head>
+
+  <body class="inter-font">
+    <header>
+      <!-- nav part -->
+      <nav class="max_width nav-part">
+        <div class="logo">
+          <img src="./image/Foodieland_logo.png" alt="" />
+        </div>
+
+        <!-- nav menues -->
+        <div class="nav-menues">
+          <ul class="menues-list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./recipe.html">Recipes</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About us</a></li>
+          </ul>
+        </div>
+
+        <!-- For nav icons -->
+        <div class="nav-social-icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </nav>
+
+      <hr class="nav_hr" />
+    </header>
+
+    <main>
+      <!-- japanese fried rice hero section  -->
+      <section class="recipe-hero max_width">
+
+        <div class="recipe-overview">
+          <div class="recipe-author">
+            <h1 class="recipe-title">Health Japanese Fried Rice</h1>
+
+            <!-- recipe stats and details -->
+            <div class="recipe-stats-details">
+              <!-- author image name and date part of hero-->
+              <div class="author-img-name-date stat">
+                <img src="./image/recipe/chef-profile.png" alt="John Smith" />
+                <div class="recipe-details">
+                  <p>John Smith</p>
+                  <small>15 March 2022</small>
+                </div>
+              </div>
+
+              <div class="prep-time  stat">
+                <i class="fa-solid fa-clock"></i>
+                <div class="recipe-details">
+                  <p>Prep Time</p>
+                  <small>10 Mins</small>
+                </div>
+              </div>
+
+              <div class="cook-time stat">
+                <i class="fa-solid fa-clock"></i>
+                <div class="recipe-details">
+                  <p>Cook Time</p>
+                  <small>10 Mins</small>
+                </div>
+              </div>
+
+              <div class="chicken  stat">
+                <i class="fa-solid fa-utensils"></i>
+                <p class="recipe-details">Chicken</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipe-actions">
+
+            <div class="action-btn">
+
+                <button 
+                    <i class="fa-solid fa-print"></i> 
+                </button>
+                
+                <p>
+                    Print
+                </p>
+            </div>
+
+
+            <div class="action-btn">
+
+                <button 
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i> 
+                </button>
+                
+                <p>
+                    Export
+                </p>
+            </div>
+
+          </div>
+        </div>
+
+        
+        <!-- recipe hero section -->
+        <div class="recipe-top-grid">
+          <div class="recipe-hero-image">
+            <img src="./image/recipe/recipe_hero_img.png" alt="Health Japanese Fried Rice"/>
+
+            <div class="hero_pause_btn">
+              <img src="./image/recipe/hero_pause_btn.png" alt="">
+            </div>
+          </div>
+
+          <!-- NUTRITION -->
+          <div class="nutrition-box">
+            <h3>Nutrition information</h3>
+            <div class="nutrition-list">
+              <div class="nutrition-item">
+                <span>Calories</span>
+                <span>219.9 kcal</span>
+              </div>
+              <div class="nutrition-item">
+                <span>Total Fat</span>
+                <span>10.7g</span>
+              </div>
+              <div class="nutrition-item">
+                <span>Protein</span>
+                <span>7.9g</span>
+              </div>
+              <div class="nutrition-item">
+                <span>Carbohydrate</span>
+                <span>22.3g</span>
+              </div>
+              <div class="nutrition-item">
+                <span>Sodium</span>
+                <span>37.4mg</span>
+              </div>
+            </div>
+            <p class="nutrition-note">
+              adipiscing elit, sed do eiusmod tempor <br />
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+
+        <!-- DESCRIPTION -->
+        <p class="recipe-desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis asut irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          paritur. Eccepteur sint occaecat cupidatat non prodient, sunt in culpa
+          qui officia deserunt mollit anim id set laborum.
+        </p>
+      </section>
+
+      <section>
+        
+
+      </section>
+
+          
+        
+  
+    </main>
+
+    <footer></footer>
+  </body>
 </html>
