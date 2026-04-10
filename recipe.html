@@ -61,7 +61,6 @@
     <main>
       <!-- japanese fried rice hero section  -->
       <section class="recipe-hero max_width">
-
         <div class="recipe-overview">
           <div class="recipe-author">
             <h1 class="recipe-title">Health Japanese Fried Rice</h1>
@@ -77,7 +76,7 @@
                 </div>
               </div>
 
-              <div class="prep-time  stat">
+              <div class="prep-time stat">
                 <i class="fa-solid fa-clock"></i>
                 <div class="recipe-details">
                   <p>Prep Time</p>
@@ -93,7 +92,7 @@
                 </div>
               </div>
 
-              <div class="chicken  stat">
+              <div class="chicken stat">
                 <i class="fa-solid fa-utensils"></i>
                 <p class="recipe-details">Chicken</p>
               </div>
@@ -101,41 +100,34 @@
           </div>
 
           <div class="recipe-actions">
-
             <div class="action-btn">
+              <button>
+                <i class="fa-solid fa-print"></i>
+              </button>
 
-                <button 
-                    <i class="fa-solid fa-print"></i> 
-                </button>
-                
-                <p>
-                    Print
-                </p>
+              <p>Print</p>
             </div>
 
-
             <div class="action-btn">
+              <button>
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </button>
 
-                <button 
-                    <i class="fa-solid fa-arrow-up-from-bracket"></i> 
-                </button>
-                
-                <p>
-                    Export
-                </p>
+              <p>Export</p>
             </div>
-
           </div>
         </div>
 
-        
         <!-- recipe hero section -->
         <div class="recipe-top-grid">
           <div class="recipe-hero-image">
-            <img src="./image/recipe/recipe_hero_img.png" alt="Health Japanese Fried Rice"/>
+            <img
+              src="./image/recipe/recipe_hero_img.png"
+              alt="Health Japanese Fried Rice"
+            />
 
             <div class="hero_pause_btn">
-              <img src="./image/recipe/hero_pause_btn.png" alt="">
+              <img src="./image/recipe/hero_pause_btn.png" alt="" />
             </div>
           </div>
 
@@ -183,16 +175,182 @@
         </p>
       </section>
 
-      <section>
-        
+      <!-- recipe container -->
+      <section class="recipe-container max_width">
+        <!-- LEFT COLUMN -->
+        <!-- LEFT COLUMN -->
+        <div class="recipe-main">
+          <!-- INGREDIENTS -->
+          <div class="recipe-section">
+            <h2>Ingredients</h2>
 
+            <h3>For main dish</h3>
+            <ul class="ingredient-list">
+              <li class="first-child"> <i class="fa-regular fa-circle-check"></i>Lorem ipsum dolor sit amet</li>
+              <li class="child"><i class="fa-regular fa-circle"></i> Lorem ipsum dolor sit amet</li>
+              <li class="child" ><i class="fa-regular fa-circle"></i> Lorem ipsum dolor sit amet</li>
+              <li class="child"><i class="fa-regular fa-circle"></i> Lorem ipsum dolor sit amet</li>
+              <li class="child"> <i class="fa-regular fa-circle"></i> Lorem ipsum dolor sit amet</li>
+            </ul>
+
+            <h3>For the sauce</h3>
+            <ul class="ingredient-list">
+              <li class="child"><i class="fa-regular fa-circle"></i> Lorem ipsum dolor sit amet</li>
+              <li class="child"><i class="fa-regular fa-circle"></i> Lorem ipsum dolor sit amet</li>
+              <li class="child"><i class="fa-regular fa-circle"></i> Lorem ipsum dolor sit amet</li>
+            </ul>
+          </div>
+
+          <!-- DIRECTIONS -->
+          <div class="recipe-section">
+            <h2>Directions</h2>
+
+            <div class="direction-step">
+              <h3><i class="fa-regular fa-circle"></i> 1. Lorem ipsum dolor sit amet</h3>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                ipsum quia dolor sit amet, cinsectetur,adipisci velit, sed quia
+                non numquam eius modi tempora incidunt ut labore et dolore
+                magnam aliquam quaerat voluptatem.
+              </p>
+              <img src="./image/recipe/direction_section_img.png" alt="Step 1" />
+            </div>
+
+            <div class="direction-step">
+              <h3><i class="fa-regular fa-circle"></i> 2. Lorem ipsum dolor sit amet</h3>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                ipsum quia dolor sit amet, cinsectetur,adipisci velit, sed quia
+                non numquam eius modi tempora incidunt ut labore et dolore
+                magnam aliquam quaerat voluptatem.
+              </p>
+            </div>
+
+            <div class="direction-step">
+              <h3><i class="fa-regular fa-circle"></i>  3. Lorem ipsum dolor sit amet</h3>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                ipsum quia dolor sit amet, cinsectetur,adipisci velit, sed quia
+                non numquam eius modi tempora incidunt ut labore et dolore
+                magnam aliquam quaerat voluptatem.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN (SIDEBAR) -->
+        <div class="recipe-sidebar">
+          <!-- OTHER RECIPES -->
+          <div class="sidebar-box">
+            <h3>Other Recipe</h3>
+
+            <div class="other-recipe">
+              <img src="./image/recipe/other_recipe_img1.png" alt="Chicken Meatballs" />
+              <div>
+                <p>Chicken Meatball with Creamy Chimi...</p>
+                <small>By Andreas Paula</small>
+              </div>
+            </div>
+
+            <div class="other-recipe">
+              <img src="./image/recipe/other_recipe_img2.png" alt="Chicken Pasta" />
+              <div>
+                <p>The Creamiest Creamy Chicken Bacon...</p>
+                <small>By Andreas Paula</small>
+              </div>
+            </div>
+
+            <div class="other-recipe">
+              <img src="./image/recipe/other_recipe_img3.png" alt="Chicken Rice" />
+              <div>
+                <p>The Best Easy One Pot Chicken and Rice</p>
+                <small>By Andreas Paula</small>
+              </div>
+            </div>
+
+            <!-- AD BANNER -->
+            <div class="sidebar-ad">
+              <img src="./image/recipe/Ads.png" alt="Advertisement" />
+            </div>
+          </div>
+        </div>
       </section>
 
-          
-        
-  
+       <!-- deliciousness inbox card -->
+       <section class="deliciousness-inbox-card max_width">
+
+        <h2 class="deliciousness-title">Deliciousness to your inbox</h2>
+
+        <p class="deleciousness-des gray-text">
+          Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqut enim ad minim 
+        </p>
+
+        <!-- email address inbox and button -->
+         <div class="email-address-place-btn">
+          <p class="email-address-place gray-text">
+            Your email address...
+          </p>
+
+          <button class="viewRecipes-button universal-btn subscribe-btn">Subscribe</button>
+
+          <!-- absolute image -->
+           <div class="deliciousness-absolute-img deliciousness-absolute-img1">
+            <img src="./image/inbox_img2.png" alt="">
+           </div>
+
+           <div class="deliciousness-absolute-img deliciousness-absolute-img2">
+            <img src="./image/inbox_img1.png" alt="">
+           </div>
+
+         </div>
+
+       </section>
+
     </main>
 
-    <footer></footer>
+    <footer class="max_width">
+      <!-- logo -->
+      <div class="footer-logo ">
+        <img src="./image/Foodieland_logo.png" alt="">
+       </div>
+       
+       
+       <!-- footer list -->
+       <ul class="footer-list">
+         <li><a href="./recipe.html"> Recipes</a></li>
+         <li><a href="">Blog</a></li>
+         <li><a href="">Contact</a></li>
+         <li><a href="">About us</a></li>
+        </ul>
+       
+       
+        <p class="footer-des gray-text">
+          Lorem ipsum dolor sit amet, consectetuipisicing elit, 
+        </p>
+       
+        <hr>
+
+        <div class="copy-right-social-icons">
+          <p class="copy-right gray-text">
+            &copy; 2020 Flowbase. Powered by <span class="orange-text">Webflow</span>
+          </p>
+
+          <div class="social-icons ">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+
+        </div>
+
+        
+
+    </footer>
   </body>
 </html>
