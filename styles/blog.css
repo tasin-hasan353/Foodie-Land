@@ -1,0 +1,614 @@
+/* this code is for google font  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* universal css code  */
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+.max_width {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.universal-btn {
+  background-color: black;
+  color: white;
+  padding: 18px 36px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-black-semibold-txt {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.color-gray-small-txt {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+.color-gray-small-medium-txt {
+  font-size: 0.87rem;
+  font-weight: 500;
+}
+
+.author-name {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* CSS for every part */
+.nav-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.menues-list {
+  display: flex;
+  gap: 61px;
+  list-style: none;
+}
+
+.menues-list li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+}
+
+.nav-social-icons {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-social-icons i {
+  width: 22px;
+  height: 22px;
+}
+
+.nav_hr {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* border-top: 1px solid black; */
+  margin-bottom: 40px;
+}
+
+.blog-article-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-article-container .blog-article-title {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.blog-article-container .blog-article-des {
+  margin-bottom: 80px;
+}
+
+.blog-article-container .search-container {
+  display: flex;
+  width: 700px;
+  background-color: #ffffff;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  padding: 10px;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.search-container .search-container-des {
+  padding-left: 22px;
+}
+
+/* recipe blog and tasty recipe section  */
+.tasty_recipe-container {
+  display: grid;
+  grid-template-columns: 65.6% 31.25%;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.tasty_recipe-container .recipe-blog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.recipe-blog-container .blog-card-parent {
+  display: flex;
+  gap: 40px;
+}
+
+.recipe-blog-container .blog-card-parent img {
+  max-width: 290px;
+  object-fit: cover;
+}
+
+.blog-card-parent .blog-title-des-author .blog-title {
+  margin-bottom: 16px;
+  margin-top: 13px;
+}
+
+.blog-title .blog-des {
+  margin-bottom: 32px;
+}
+
+.author-container-date {
+  display: flex;
+  margin-top: 32px;
+  align-items: center;
+}
+
+.author-container-date .author-name-img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 24px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.author-container-date .author-name-img img {
+  width: 40px;
+  height: 40px;
+}
+
+.author-container-date .date {
+  padding-left: 24px;
+}
+
+/* right part for tasty recipes  */
+.tasty_recipe-container .right-part {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.right-part img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.tasty_recipe-container .right-part > h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+}
+
+.right-part .tasty-card-parent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.right-part .tasty-card-parent .tasty-card {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.right-part .tasty-card-parent .tasty-card img {
+  max-width: 180px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-title-author .tasty-card-title {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+/* page number section  */
+.page-number-section {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 160px;
+}
+
+.page-number-section .page-number {
+  width: 64px;
+  height: 64px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.page-number-section .page-number:nth-child(1) {
+  background-color: black;
+  color: white;
+}
+
+/* deliciousness inbox card  */
+.deliciousness-inbox-card {
+  background-color: #e7f9fd;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 80px 0px 80px 0px;
+  border-radius: 30px;
+  position: relative;
+  margin-bottom: 160px;
+}
+
+.deliciousness-inbox-card .deliciousness-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.deliciousness-inbox-card .deleciousness-des {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.deliciousness-inbox-card .email-address-place-btn {
+  display: flex;
+  gap: 144px;
+  align-items: center;
+  background-color: white;
+  padding: 10px 10px 10px 32px;
+  border-radius: 20px;
+}
+
+.email-address-place-btn .email-address-place {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.deliciousness-inbox-card .deliciousness-absolute-img {
+  position: absolute;
+}
+
+.deliciousness-inbox-card .deliciousness-absolute-img1 {
+  right: 0%;
+  bottom: 0%;
+}
+
+.deliciousness-inbox-card .deliciousness-absolute-img1 > img {
+  border-radius: 30px;
+}
+
+.deliciousness-inbox-card .deliciousness-absolute-img2 {
+  left: 0%;
+  bottom: 0%;
+}
+
+/* footer  */
+.footer-logo {
+  margin-bottom: 5px;
+}
+
+.footer-list {
+  display: flex;
+  gap: 61px;
+  list-style: none;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+
+.footer-list li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+}
+
+.footer-des {
+  margin-bottom: 48px;
+}
+
+footer > hr {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 48px;
+}
+
+footer .copy-right-social-icons {
+  display: flex;
+  gap: 338px;
+  justify-content: end;
+  margin-bottom: 48px;
+}
+
+footer .copy-right-social-icons .copy-right .orange-text {
+  color: orangered;
+}
+
+footer .copy-right-social-icons .social-icons {
+  display: flex;
+  gap: 40px;
+}
+
+/* responsiveness for mobile  */
+/* Mobile */
+@media (max-width: 480px) {
+  .nav-part {
+    margin: 20px auto;
+    flex-direction: column;
+  }
+
+  .menues-list {
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .nav-social-icons {
+    display: none;
+  }
+
+  .blog-article-container .blog-article-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .blog-article-container .blog-article-des {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .blog-article-container .search-container {
+    max-width: 330px;
+  }
+
+  /* recipe blog and tasty recipe section  */
+  .tasty_recipe-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 80px;
+    padding: 5px;
+  }
+
+  .tasty_recipe-container .recipe-blog-container {
+    gap: 70px;
+  }
+
+  .recipe-blog-container .blog-card-parent {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .author-container-date {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  /* right part for tasty recipes  */
+
+  .tasty_recipe-container .right-part > h2 {
+    text-align: center;
+  }
+
+  .right-part .tasty-card-parent {
+    margin-bottom: 40px;
+  }
+
+  .page-number-section {
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+  }
+
+  /* deliciousness inbox card  */
+  .deliciousness-inbox-card {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 80px;
+  }
+
+  .deliciousness-inbox-card .deliciousness-title {
+    text-align: center;
+  }
+
+  .deliciousness-inbox-card .email-address-place-btn {
+    gap: 80px;
+  }
+
+  .deliciousness-inbox-card .deliciousness-absolute-img {
+    display: none;
+  }
+
+  /* footer  */
+  .footer-logo {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 30px;
+  }
+
+  .footer-list {
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .footer-des {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  footer > hr {
+    margin-bottom: 30px;
+  }
+
+  footer .copy-right-social-icons {
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}
+
+/* responsiveness for medium devices */
+@media (min-width: 481px) and (max-width: 768px) {
+  .nav-part {
+    margin: 20px auto;
+    flex-direction: column;
+  }
+
+  .menues-list {
+    gap: 50px;
+    margin-top: 20px;
+  }
+
+  .nav-social-icons {
+    display: none;
+  }
+
+  .blog-article-container .blog-article-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .blog-article-container .blog-article-des {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .blog-article-container .search-container {
+    max-width: 500px;
+  }
+
+  /* recipe blog and tasty recipe section  */
+
+  /* recipe blog and tasty recipe section  */
+  .tasty_recipe-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 80px;
+    padding: 5px;
+  }
+
+  .tasty_recipe-container .recipe-blog-container {
+    gap: 70px;
+  }
+
+  .recipe-blog-container .blog-card-parent {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .author-container-date {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  /* right part for tasty recipes  */
+
+  .tasty_recipe-container .right-part > h2 {
+    text-align: center;
+  }
+
+  .right-part .tasty-card-parent {
+    margin-bottom: 40px;
+  }
+
+  .page-number-section {
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+  }
+
+  /* deliciousness inbox card  */
+  .deliciousness-inbox-card {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 80px;
+  }
+
+  .deliciousness-inbox-card .deliciousness-title {
+    text-align: center;
+  }
+
+  .deliciousness-inbox-card .email-address-place-btn {
+    gap: 80px;
+  }
+
+  .deliciousness-inbox-card .deliciousness-absolute-img {
+    display: none;
+  }
+
+  /* footer  */
+  .footer-logo {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 30px;
+  }
+
+  .footer-list {
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .footer-des {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  footer > hr {
+    margin-bottom: 30px;
+  }
+
+  footer .copy-right-social-icons {
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}
+
+/* for laptop */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-part {
+    margin: 20px auto;
+    flex-direction: column;
+  }
+
+  .menues-list {
+    gap: 50px;
+    margin-top: 20px;
+  }
+
+  .nav-social-icons {
+    display: none;
+  }
+}
